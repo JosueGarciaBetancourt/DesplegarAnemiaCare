@@ -1,0 +1,371 @@
+.prediccionesContainer {
+    border-radius: var(--border-radius-mainSectionContainer);
+    padding: var(--padding-mainSectionContainer);
+	padding-top: 0.5rem;
+    background-color: var(--background-color-mainSectionContainer);
+    width: 100%;
+    height: 100%; /*auto*/
+}
+
+h3 {
+	font-size: 1.2rem;
+	color: var(--clr-primary-variant3);
+}
+
+.firstDosajesRow{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    width: 100%;
+    height: 3rem;
+    gap: 1.5rem;
+    align-items: center;
+	justify-content: space-between;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.secondDosajesRow{
+    display: flex;
+	flex-direction: row;
+    width: 100%;
+	height: auto;
+	gap: 2rem;
+	padding-bottom: 1rem;
+	/*border-bottom: 1.5px solid #ccc;*/
+	align-items: center;
+}
+
+.thirdDosajesRow{
+    display: flex;
+	flex-direction: column;
+    width: 100%;
+	/*justify-content: space-between;*/
+	height: auto;
+	margin-top: 1rem;
+	gap: 2rem;
+	padding-bottom: 1rem;
+	/*border-bottom: 1.5px solid #ccc;*/
+}
+
+.fourthCanjesRow{
+    display: flex;
+	flex-direction: row;
+    width: 100%;
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+	gap: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1.5px solid #ccc;
+}
+
+.dose-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dose-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Distribuye el espacio de manera uniforme */
+    cursor: pointer;
+    width: 100%;  
+}
+
+.dose-icon {
+    width: 50px;  /* Fija el ancho del ícono */
+    height: 50px;
+    background-color: #4A4A7D; /* Color del ícono */
+    border-radius: 10px;
+    flex-shrink: 0; /* Evita que se reduzca su tamaño */
+}
+
+.dose-details {
+    flex: 1;  /* Permite que esta sección tome el espacio restante */
+    max-width: 300px;  /* Define un ancho máximo para evitar que crezca demasiado */
+    margin-left: 15px;
+}
+
+.dose-info {
+    width: 150px; /* Establece un ancho fijo para las secciones de información */
+    text-align: center;
+    flex-shrink: 0;  /* Evita que se reduzca su tamaño */
+}
+
+.dose-info.doctor {
+    width: 200px; /* Establece un ancho fijo para las secciones de información */
+}
+
+.dose-info span {
+    display: block;  /* Asegura que el texto dentro del span esté en bloque */
+    font-size: 14px;
+    color: #333;
+}
+
+.dose-info span.label {
+    color: #B7C1D1;
+	font-weight: bold;
+}
+
+.options {
+    width: 50px;  /* Define un ancho fijo para la columna de opciones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    flex-shrink: 0;  /* Evita que se reduzca su tamaño */
+}
+
+.options span {
+    font-size: 2.2rem;
+	font-weight: 500;
+}
+
+.options:hover {
+	color: rgb(31, 142, 221);
+	font-weight: bold;
+}
+
+.tableRow{
+    width: 100%;
+	height: auto;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.verticalPairGroup {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	text-align: start;
+	align-items: start;
+	gap: 0.5rem;
+}
+
+.verticalPairGroup.tooltipInside {
+	gap: 0.25rem;
+}
+
+.verticalPairGroup label {
+	text-align: left;
+	width: auto;
+}
+
+.input[type="date"] {
+	text-align: start;
+	width: 5rem;
+}
+
+#idFechaCanjeInput{
+	height: 2.3rem;
+	max-width: 60%;
+	border-radius: 3px;
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+#tecnicoCanjesInput {
+	width: 19rem;
+}
+
+#puntosActualesCanjesInput {
+	width: 7rem;
+	text-align: center;
+	padding-left: 1px;
+}
+
+#comprobanteCanjesInput {
+	width: 9rem;
+}
+
+#montoTotalCanjesInput {
+	width: 7rem;
+	text-align: center;
+	padding-left: 1px;
+}
+
+#puntosGeneradosCanjesInput, #puntosRestantesCanjesInput {
+	width: 8rem;
+	text-align: center;
+	padding-left: 1px;
+}
+
+#clienteCanjesTextarea {
+	width: 10rem;
+	height: 4.5rem;
+	max-height: 5rem;
+	padding-right: 0;
+	resize: none; 
+	overflow-y: hidden;	
+}
+
+#messageErrorTecnicoCanjes {
+	margin-top: 1.6rem;
+}
+
+#recompensasCanjesInput {
+	width: 35rem;
+}
+
+#cantidadRecompensaCanjesInput {
+	width: 5rem;
+	text-align: center;
+}
+
+#idAgregarRecompensaTablaBtn {
+	max-width: 9rem;
+	max-height: 2rem;
+	align-self: flex-end;
+}
+
+#idQuitarRecompensaTablaBtn {
+	max-width: 10rem;
+	max-height: 2rem;
+	align-self: flex-end;
+}
+
+.resumenContainer {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+	opacity: 0;
+}
+
+.resumenContainer.shown {
+	opacity: 1;
+ }
+
+
+.resumenContainer h3 {
+	font-size: 1rem;
+	color: black;
+	text-align: center;
+}
+
+.resumenContent {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto auto auto; /* Tres filas automáticas */
+    gap: 10px; /* Espaciado entre las celdas */
+}
+
+.resumenContent h4 {
+	font-size: 0.9rem;
+}
+.resumenContent h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.resumenContent .labelPuntosComprobante, 
+.resumenContent .labelPuntosCanjeados, 
+.resumenContent .labelPuntosRestantes {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Tabla */
+#celdaCodigoRecompensa {
+    width: 6rem;
+}
+
+#descripcionCanjes {
+    width: 15rem;
+}
+
+/* DETALLE DE DOSAJE */
+.dose-moreInformation {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.dose-moreInformation.active {
+    max-height: 1000px; /* Aumentado para acomodar más contenido */
+    opacity: 1;
+    padding: 2rem 1rem;
+}
+
+.details-section,
+.prediction-section {
+    width: 100%;
+}
+
+.details-section h4,
+.prediction-section h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.details-section p,
+.prediction-section p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.details-section strong {
+    color: #3498db;
+    font-weight: 600;
+}
+
+.prediction-section strong {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Estilos adicionales para mejorar la presentación */
+.dose-moreInformation .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dose-moreInformation .info-row:last-child {
+    border-bottom: none;
+}
+
+.dose-moreInformation .info-label {
+    font-weight: 500;
+    color: #7f8c8d;
+}
+
+.dose-moreInformation .info-value {
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Estilo para valores destacados */
+.dose-moreInformation .highlighted-value {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}

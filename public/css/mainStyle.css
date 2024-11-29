@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: text;
+    /*list-style: none;*/
+	/*appearance: none;*/
+}
+
+body {
+    display: grid;
+    min-width: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4ff;
+    color: #333;
+    line-height: 1.6;
+    width: 100vw;
+	height: 100vh;
+	user-select: none;
+	overflow-x: hidden;
+    overflow-y: auto !important;
+}
+
+:root {
+	--clr-primary: #7380ec;
+	--clr-danger: #ff7782;
+	--clr-success: #41f1b6;
+	--clr-white: #fff;
+	--clr-info-dark: #687D9F;
+	--clr-info-light: #dce1eb;
+	--clr-dark: #363949;
+	--clr-warnig: #ff4edc;
+	--clr-light: rgba(132, 139, 200, 0.18);
+	--clr-primary-variant: #0074FF;
+	--clr-primary-variant2: #033878;
+    --clr-primary-variant3: #1F3B84;
+	--clr-dark-variant: #677483;
+	--clr-color-background: #f6f6f9;
+
+	--card-border-radius: 2rem;
+	--border-radius-1: 0.4rem;
+	--border-radius-2: 0.8rem;
+	--border-radius-3: 1.2rem;
+
+	--card-padding: 1.8rem;
+	--padding-1: 1.2rem;
+	--box-shadow: 0 2rem 3rem var(--clr-light);
+
+	--padding-top-mainDashboardContainer: 1.4rem;
+	--padding-bottom-mainDashboardContainer: 1.4rem;
+	--padding-right-mainDashboardContainer: 2rem;
+	--padding-left-mainDashboardContainer: 1rem;
+	
+	--padding-mainSectionContainer: 2rem;
+	--border-radius-mainSectionContainer: 1rem;
+	--background-color-mainSectionContainer: #fff;
+}
+
+/*Títulos*/
+h1{
+    color: #027EB3;
+    font-weight: bold;
+	font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    text-align: center; 
+    margin: 0;
+}
+
+/*Subtítulos*/
+h2{
+	color: #000000;
+    font-weight: bold;
+	font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    text-align: left; 
+    margin: 0;
+}
+
+/*Texto negrita mediano*/
+h3{
+	color: #000000;
+    font-weight: bold;
+	font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+    text-align: left; 
+    margin: 0;
+}
+
+/*Texto normal mediano*/
+h4{
+	color: #000000;
+    font-weight: 500;
+	font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+
+/*Texto gris mediano*/
+h5{
+	color: #AAA;
+    font-weight: 500;
+	font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+
+/*Texto gris pequeño*/
+h6{
+	color: #AAA;
+    font-weight: 500;
+	font-size: 0.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+
+/*Estilos generales de los botones de la app*/
+/*CREATE*/
+.btnCreateItem-container {
+    background: #2E1572;
+    border-radius: 40px;
+    display: flex; 
+    max-width: 12rem; 
+    min-height: 3rem; 
+    align-items: center;
+    padding: 0.1rem 1rem;
+    margin: 0;
+    transition-duration: .4s;
+}
+
+.btnCreateItem-container:hover{
+    background-color: #3a13a7;
+}
+
+.btnCreateItem {
+    color: #FFF;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    width: 100%; /* Toma todo el ancho disponible del contenedor padre */
+    padding: 0.3rem; 
+    align-items: center;
+    justify-content: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    white-space: normal; /* Permite que el texto se ajuste automáticamente */
+    word-break: break-word; /* Asegura que las palabras largas se rompan correctamente */
+}
+
+.btnCreateItem span {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+/* Estilos para los mensajes de error */
+.alert {
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.alert-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alert-list li {
+    margin-left: 20px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.alert-list li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #721c24;
+    font-size: 1.2rem;
+}
+
+.alert.alert-danger {
+    border-color: #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+}
